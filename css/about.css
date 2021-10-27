@@ -1,0 +1,87 @@
+@import url("./common/all.css");
+
+/* nav indicator */
+ul > li.about > a{
+    border-bottom: solid 1px var(--gold);
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container > *{
+    max-width: 600px;
+    text-align: center;
+}
+
+.container > h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* form section */
+.greeting{
+    margin-bottom: 180px;
+
+}
+
+.greeting > p {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.greeting > *{
+    width: 386px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: var(--gold);
+    padding-bottom: 30px;
+    width: 386px;
+
+}
+
+
+form > label >input, textarea{
+    margin-top: .6rem;
+    outline: solid 2px var(--gold);
+    background-color: transparent;
+    border: none;
+    height: 40px;
+}
+
+form > label > textarea{
+    height: 120px;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+
+form > label > input::placeholder, 
+textarea::placeholder{
+    color: var(--gold);
+}
+
+
+.button > button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

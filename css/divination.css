@@ -1,0 +1,142 @@
+@import url("./common/all.css");
+
+/* nav indicator */
+ul > li.divination > a{
+    border-bottom: solid 1px var(--gold);
+}
+
+/* hero section */
+.crystal-ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.caption{
+    max-width: 726px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* section1 */
+.container-tarot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarot{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.tarot img{
+    padding: 0 24px;
+}
+
+
+/* section2 */
+.container-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.selection > label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+/* radio button style */
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark{
+    border: solid 2px var(--gold);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: none;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--gold);
+    border-radius: 100%;
+    display: none;
+}
+
+.radio input:checked + .checkmark::before{
+  display: flex;
+
+}
+
+
+/* section3 */
+.crystal-ball-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+
+.crystal-ball-button > a{
+    background-image: url(../img/hands.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    min-width: 600px;
+}
+
+.crystal-ball-button p{
+    opacity: 0;
+    color: var(--gold);
+    transform: translateY(-100px);
+    transition: ease .5s;
+}
+
+.crystal-ball-button > a:hover > p{
+    opacity: 1;
+    transition: ease .5s;
+}
+

@@ -1,0 +1,76 @@
+@import url("./common/all.css");
+
+/* nav indicator */
+.gallery a{
+    background-color: var(--gold);
+    color: var(--pri-purple);
+}
+
+
+/* hero section */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrap{
+    max-width: var(--page-width);
+}
+
+.wrap > .item{
+    width: 33%;
+    margin-bottom: 100px;
+}
+
+.item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-frame{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 314px;
+    height: 314px;
+
+    background-image: url("../img/ornament-frame.svg");
+    background-repeat: no-repeat;
+}
+
+.item > a{
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.item img{
+    width: 220px;
+    height: 220px;
+}
+
+.item .title{
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.banner .wrap{
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .wrap > *{
+    padding: 10px;
+    color: white;
+}

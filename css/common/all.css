@@ -1,0 +1,252 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("../backgound.css");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rufina', serif, 
+    'Poppins', sans-serif, 
+    'Noto Sans', sans-serif,
+    'Petit Formal Script', cursive;
+}
+
+html{
+    --pri-purple: #29274E;
+    --pri-sec-purple: #474973;
+    --com-purple: #8555A3;
+    --com-sec-purple: #A69CAC;
+    --yellow: #FBEFAE;
+    --gold: #DAB689;
+
+    /* 寬度暫時寫死 */
+    --page-width: 1200px;
+
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--pri-purple);
+    color: var(--gold);
+}
+
+
+
+
+/* divider */
+.divider{
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+/* page-style */
+.page-title{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.page-title > *{
+    padding: 0 40px;
+
+}
+
+
+/* banner */
+.banner{
+    background-image: url(../../img/banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 480px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* product info section */
+
+.-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.-info > *{
+    margin: 30px auto;
+}
+
+.-basic{
+    display: flex;
+    margin: 1rem;
+    margin-top: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 680px;
+    
+}
+
+.-buy{
+    border: solid 4px var(--gold);
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 200px;
+}
+
+
+/* product info accordion */
+.accordion{
+    width: 680px;
+}
+
+.accordion input{
+    display: none;
+}
+
+.accordion label{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.accordion label > .subtitle, .list{
+    padding: 8px 20px;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* content animation */
+input + label + .content{
+    /* opacity: 0;
+    height: 0;
+	font-size: 0;
+    transition: ease .45s;
+    z-index: -1; */
+    display: none;
+}
+
+input:checked + label + .content{
+    /* opacity: 1;
+    height: 120px;
+	font-size: 18px;
+    transition: ease .45s; */
+    display: flex;
+}
+
+/* arrow animation */
+input + label >  .subtitle > img{
+    transition: ease .5s;
+}
+
+input:checked + label > .subtitle > img{
+    transform: rotate(-90deg);
+    transition: ease .5s;
+}
+
+
+
+
+/* font */
+h2{
+    font-family: Rufina;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+::placeholder{
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.title{
+    font-family: Rufina;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subtitle{
+    font-family: Rufina;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.caption{
+    font-family: Petit Formal Script;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
