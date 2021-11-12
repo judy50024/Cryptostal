@@ -8,18 +8,20 @@
 
 
 /* hero section */
-.container{
+
+.wrap{
+    max-width: var(--page-width);
+
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-}
-.wrap{
-    max-width: var(--page-width);
+    margin-bottom: 100px;
 }
 
 .wrap > .item{
-    width: 33%;
+    width: 30%;
     margin-bottom: 100px;
 }
 
@@ -54,8 +56,34 @@
 
 .item .title{
     text-align: center;
-    margin: 10px auto;
+    margin: 10px;
 }
+
+@media (max-width: 1199px) {
+
+    .item{
+        max-width: 33.3%;
+        margin: 3rem;
+    }
+
+    .wrap > .item{
+        margin: 10%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .wrap{
+        flex-direction: column;
+    }
+
+    .wrap > .item {
+        margin-bottom: 0;
+    }
+
+}
+
 
 /* banner */
 .banner{
@@ -65,7 +93,7 @@
 }
 
 .banner .wrap{
-    margin: 0 80px;
+    margin: 0 40px;
     display: flex;
     flex-direction: column;
 }
@@ -73,4 +101,20 @@
 .banner .wrap > *{
     padding: 10px;
     color: white;
+}
+
+@media (max-width: 767px) {
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner > .wrap{
+        margin-bottom: 20px;
+    }
+/* 
+    .button-container{
+        margin: 20px;
+    } */
+
 }

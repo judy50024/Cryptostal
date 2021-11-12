@@ -8,8 +8,15 @@
 }
 
 .product-img > img{
-    width: 400px;
-    height: 400px
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 767px) {
+    .product-img > img{
+        width: 100%;
+        max-width: 220px;
+    }
 }
 
 
@@ -73,4 +80,28 @@
 .banner .wrap > *{
     padding: 10px;
     color: white;
+}
+
+@media (max-width: 767px) {
+    .wrap{
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .-buy{
+        flex-direction: column;
+    }
+
+    .-price{
+        margin-bottom: 20px;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner .wrap{
+        margin-bottom: 40px;
+    }
+
 }

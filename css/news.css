@@ -15,7 +15,8 @@ main{
 }
 
 .width-container{
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
 }
 
 .news-container{
@@ -39,4 +40,27 @@ main{
 .divider{
     margin: 0;
     padding: 10px 0;
+}
+
+.mushroom{
+    order: 2;
+}
+
+
+@media (max-width: 1199px){
+    .width-container{
+        margin-bottom: 100px;
+    }
+
+    .news-container{
+        flex-direction: column;
+    }
+
+    .news-container > *{
+        padding: 0 30px;
+    }
+
+    .mushroom{
+        order: 0;
+    }
 }

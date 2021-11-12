@@ -1,5 +1,12 @@
 @import url("./common/all.css");
 
+main .main{
+    width: 100%;
+    max-width: var(--screen);
+    margin-top: 0;
+}
+
+
 .img-container img{
     width: 184px;
     height: 184px;
@@ -19,24 +26,40 @@
 .hero-img{
     width: 700px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+
+    .hero-img > img{
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .hero-img > img{
+        display: none;
+    }
+}
 
 /* main content */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
-main .main > h2, .main > p{
+main .main > h2, .main > p, .main-copy-3 > p{
     padding-bottom: 60px;
 }
 
 main .main{
-    width: 40%;
+    width: 60%;
     font-size: 18px;
 }
 
@@ -66,22 +89,57 @@ main .main{
 
 .main-copy-3 > .para-1, .para-2, .para-3{
     display: flex;
+    flex: 1;
     align-items: center;
-    padding: 5px 0;
 }
 
-.main-copy-3 > .para-1{
-    padding-top: 60px;
+.main-copy-3 > .para-2 > img{
+    order: 1;
 }
 
 .main-copy-3 > .para-3{
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
+
+@media (max-width: 767px) {
+
+    main .main{
+        padding: 0 30px;
+        width: 100%;
+    }
+    main .main > h2, .main > p, .main-copy-3 > p{
+        padding-bottom: 20px;
+    }
+
+    .main-copy-3{
+        margin-bottom: 30px;
+    }
+
+    .main-copy-3 > .para-1, .para-2, .para-3{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .main-copy-3 > .para-2 > img{
+        order: 0;
+    }
+
+    .main-copy-3 > .para-3{
+        padding-bottom: 0;
+    }
+
+    .main img{
+        margin: 20px;
+    }
+}
+
+
 
 /* faq section */
 .faq{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
@@ -98,8 +156,53 @@ main .main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
     margin-bottom: 180px;
 }
+
+@media (max-width: 767px) {
+    .faq{
+        margin: 0 60px;
+        margin-bottom: 60px;
+    }
+
+    .faq .accordion{
+        width: 100%;
+    }
+
+    .faq .accordion p {
+        font-family: Rufina;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .faq .accordion .content p{
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+@media (max-width: 375px) {
+    .faq{
+        margin: 0 30px;
+        margin-bottom: 30px;
+    }
+
+    .faq .content .list{
+        padding: 0;
+        width: 100%;
+    }
+}
+
 
 
 /* arrow icon */
@@ -130,6 +233,12 @@ a.arrow{
     position: fixed;
     bottom: 35%;
     right: 10%;
+}
+
+@media (max-width: 767px) {
+    .arrow{
+        display: none;
+    }
 }
 
 
