@@ -18,31 +18,49 @@ main .main{
     padding-top: 80px;
 }
 
+.hero-logo img{
+    margin-top: 40px;
+}
+
 .img-container{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 
-.hero-img{
-    width: 700px;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 40px;
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 1rem;
 }
 
 @media (max-width: 767px) {
 
-    .hero-img > img{
-        width: 120px;
-        height: 120px;
-        padding: 5px;
+    .img-container img{
+        max-width: 140px;
+        margin: 0.5rem;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 497px) {
+    .img-container{
+        padding-bottom: 40px;
+    }
 
-    .hero-img > img{
-        display: none;
+    .img-container img{
+        max-width: 100px;
+    }
+}
+
+
+@media (max-width: 345px) {
+
+    .img-container  img{
+        max-width: 80px;
     }
 }
 
@@ -93,6 +111,7 @@ main .main{
     align-items: center;
 }
 
+
 .main-copy-3 > .para-2 > img{
     order: 1;
 }
@@ -115,9 +134,17 @@ main .main{
         margin-bottom: 30px;
     }
 
+    .main-copy-3 h2{
+        text-align: center;
+    }
+
     .main-copy-3 > .para-1, .para-2, .para-3{
         flex-direction: column;
         padding-bottom: 20px;
+    }
+
+    .main-copy-3 p{
+        text-align: center;
     }
 
     .main-copy-3 > .para-2 > img{
@@ -129,6 +156,7 @@ main .main{
     }
 
     .main img{
+
         margin: 20px;
     }
 }
@@ -162,7 +190,7 @@ main .main{
 
 @media (max-width: 767px) {
     .faq{
-        margin: 0 60px;
+        margin: 0 30px;
         margin-bottom: 60px;
     }
 
@@ -193,7 +221,7 @@ main .main{
 
 @media (max-width: 375px) {
     .faq{
-        margin: 0 30px;
+        margin: 0 20px;
         margin-bottom: 30px;
     }
 

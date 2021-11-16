@@ -14,6 +14,7 @@
 
 @media (max-width: 767px) {
     .product-img > img{
+        margin-top: 40px;
         width: 100%;
         max-width: 220px;
     }
@@ -44,6 +45,18 @@
     width: 100%;
 }
 
+.left-arrow{
+    /* flip img */
+    transform: scaleX(-1);
+    position: relative;
+    left: 100px;
+}
+
+.right-arrow{
+    position: relative;
+    right: -85vw;
+}
+
 .carousel-wrap{
     display: flex;
     width: 1200px;
@@ -69,6 +82,7 @@
 .banner{
     display: flex;
     flex-direction: row;
+    z-index: -100;
 }
 
 .banner .wrap{

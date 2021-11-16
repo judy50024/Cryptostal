@@ -22,27 +22,47 @@
 <div class="star star8"></div>
 
 <!-- navbar -->
-<nav>
-    <h1 class="logo">
-        <a href="index.html">Cryptostal</a>
-    </h1>
-    <ul>
-        <li class="about">
-            <a href="about.html">About</a>
-        </li>
-        <li class="news">
-            <a href="news.html">News</a>
-        </li>
-        <li class="divination">
-            <a href="divination.html">Divination</a>
-        </li>
-        <li class="gallery">
-            <a href="gallery.html">Gallery</a>
-        </li>
-    </ul>
-    <img class="hambergur" src="./icon/hambergur.svg" alt="hambergur">
-</nav>
+<div class="nav-box">
+    <nav>
+        <h1 class="logo">
+            <a href="index.html">Cryptostal</a>
+        </h1>
+        <ul class="nav-menu">
+            <li class="about nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="news nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="divination nav-item">
+                <a class="nav-link" href="divination.html">Divination</a>
+            </li>
+            <li class="gallery nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
 
+            <li class="nav-social">
+                <a href="https://opensea.io/collection/cryptostal" class="social-icon opensea" target="_blank">
+                    <img src="./icon/opensea.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/alchethis/" class="social-icon instagram" target="_blank">
+                    <img src="./icon/instagram.svg" alt="">
+                </a>
+                <a href="https://twitter.com/alchethis2021" class="social-icon twitter" target="_blank">
+                    <img src="./icon/twitter.svg" alt="">
+                </a>
+            </li>
+
+        </ul>
+        
+        <div class="hamburger menuIcon" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </nav>
+</div>
 
 <!-- hero section -->
 <div class="page-title">
@@ -133,5 +153,8 @@
     </div>
 
 </footer>
+
+<script src="./js/all.js"></script>
+
 </body>
 </html>

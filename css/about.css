@@ -12,10 +12,11 @@ ul > li.about > a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 0 20px;
 }
 
-.container > *{
+.container p.paragraph{
+    width: 100%;
     max-width: 600px;
     text-align: center;
 }
@@ -28,9 +29,8 @@ ul > li.about > a{
 
 /* form section */
 .greeting{
-    margin-bottom: 180px;
-
-
+    margin: 0 20px;
+    margin-bottom: 160px;
 }
 
 .greeting > p {
@@ -41,6 +41,7 @@ ul > li.about > a{
 
 .greeting > *{
     width: 100%;
+    max-width: 386px;
 }
 
 /* form */
@@ -62,6 +63,25 @@ form > label{
 
 }
 
+form input, textarea{
+    padding: 20px;
+    color: var(--yellow);
+    background-color: transparent;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+}
+
+form input:focus, textarea:focus{
+    border: solid 2px var(--gold);
+    outline: none;
+    box-shadow: 0px 0px 5px 0px var(--gold);
+}
+
 
 form > label >input, textarea{
     margin-top: .6rem;
@@ -79,7 +99,7 @@ form > label > textarea{
 
 form > label > input::placeholder, 
 textarea::placeholder{
-    color: var(--gold);
+    color: var(--yellow);
 }
 
 
@@ -94,5 +114,6 @@ textarea::placeholder{
    form {
         padding: 20px;
    }
+
 
 }
