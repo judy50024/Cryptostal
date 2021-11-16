@@ -1,17 +1,23 @@
 @import url("./common/all.css");
 
 /* hero section */
-
-.title{
-    text-align: center;
-    margin-bottom: 30px;
+p.subtitle{
+    text-align: left;
 }
 
-.paragraph{
+p.title{
+    padding: 20px 30px;
+}
+
+p.paragraph{
     max-width: 600px;
     text-align: center;
-    margin: 30px auto;
+    margin: 16px 30px;
     color: white;
+}
+
+.-share{
+    padding: 30px;
 }
 
 .container{
@@ -24,23 +30,38 @@
 
 .wrap{
     max-width: var(--page-width);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+
 }
 
 .item-frame{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 314px;
+    width: 100%;
+    max-width: 314px;
     height: 314px;
 
     background-image: url("../img/ornament-frame.svg");
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .item img{
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    max-width: 220px;
 }
 
 .item .title{
@@ -48,7 +69,73 @@
     margin: 10px auto;
 }
 
+@media (max-width: 374px){
+
+    .item-frame{
+        max-width: 220px;
+        height: 220px;
+    }
+
+    .item img{
+        max-width: 140px;
+    }
+}
+
+
+.-basic{
+    padding: 30px;
+}
+
 .-share{
     margin: 0;
+}
+
+.-info > *{
+    border: solid 1px red;
+    max-width: 900px;
+    width: 100%;
+}
+    
+.-buy{
+    padding: 30px;
+}
+
+
+.-price{
+    margin: .5rem 0;
+}
+
+.accordion .title{
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .container{
+        margin-bottom: 0;
+    }
+
+    .-info{
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 499px) {
+    .-buy{
+        flex-direction: column;
+        border: solid 1px red;
+    }
+}
+
+
+
+@media (max-width: 374px) {
+    .wrap{
+        /* height: 70vh; */
+    }
+
+    p.title{
+        padding: 1rem 30px;
+    }
 }
 

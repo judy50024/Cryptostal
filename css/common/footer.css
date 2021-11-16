@@ -141,18 +141,17 @@ input:focus{
         padding: 20px;
     }
 
-    footer .-email{
-        order: 3;
-    }
-
-    footer .-main{
-        margin: 0 30px;
-    }
     .col{
         flex: 0;
     }
 
     .-email{
+        padding: 0;
+        order: 3;
+    }
+
+    .-social{
+        margin: 20px  0;
         padding: 0;
     }
 }

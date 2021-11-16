@@ -30,21 +30,26 @@
     <h1 class="logo">
         <a href="index.html">Cryptostal</a>
     </h1>
-    <ul>
-        <li class="about">
-            <a href="about.html">About</a>
+    <ul class="nav-menu">
+        <li class="about nav-item">
+            <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="news">
-            <a href="news.html">News</a>
+        <li class="news nav-item">
+            <a class="nav-link" href="news.html">News</a>
         </li>
-        <li class="divination">
-            <a href="divination.html">Divination</a>
+        <li class="divination nav-item">
+            <a class="nav-link" href="divination.html">Divination</a>
         </li>
-        <li class="gallery">
-            <a href="gallery.html">Gallery</a>
+        <li class="gallery nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
         </li>
     </ul>
-    <img class="hambergur" src="./icon/hambergur.svg" alt="hambergur">
+    <div class="hamburger menuIcon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <!-- <img class="hambergur" src="./icon/hambergur.svg" alt="hambergur"> -->
 </nav>
 
 
@@ -250,6 +255,8 @@
     </div>
 
 </footer>
+
+<script src="./js/all.js"></script>
 
 </body>
 </html>

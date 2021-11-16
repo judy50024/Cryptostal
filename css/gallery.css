@@ -20,29 +20,37 @@
     margin-bottom: 100px;
 }
 
-.wrap > .item{
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+
     width: 30%;
     margin-bottom: 100px;
 }
 
-.item{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .item-frame{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 314px;
+    /* width: 314px;
+    height: 314px; */
+
+    width: 100%;
+    max-width: 314px;
     height: 314px;
 
     background-image: url("../img/ornament-frame.svg");
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
+
 
 .item > a{
     text-decoration: none;
@@ -50,8 +58,8 @@
 }
 
 .item img{
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    max-width: 220px;
 }
 
 .item .title{
@@ -59,30 +67,66 @@
     margin: 10px;
 }
 
+
 @media (max-width: 1199px) {
 
     .item{
-        max-width: 33.3%;
         margin: 3rem;
     }
 
-    .wrap > .item{
-        margin: 10%;
+    .item-frame{
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+    }
+
+    .item a{
+        max-width: 140px;
     }
 
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 676px) {
+
+    .item-frame{
+        width: 400px;
+    }
+
+    .item a{
+        width: 200px;
+    }
+}
+
+@media (max-width: 499px) {
 
     .wrap{
         flex-direction: column;
+
+    }
+    
+    .item-frame{
+        width: 400px;
     }
 
-    .wrap > .item {
-        margin-bottom: 0;
+    .item a{
+        width: 200px;
     }
 
 }
+
+
+@media (max-width: 374px){
+
+    .item-frame{
+        width: 380px;
+    }
+
+    .item a{
+        width: 180px;
+    }
+}
+
 
 
 /* banner */
@@ -112,9 +156,9 @@
     .banner > .wrap{
         margin-bottom: 20px;
     }
-/* 
-    .button-container{
-        margin: 20px;
-    } */
+
+    .banner p.title{
+        text-align: center;
+    }
 
 }
