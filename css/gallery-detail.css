@@ -12,7 +12,7 @@
     max-width: 400px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .product-img > img{
         margin-top: 40px;
         width: 100%;
@@ -96,7 +96,7 @@
     color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .wrap{
         width: 100%;
         max-width: 90%;
@@ -112,6 +112,7 @@
 
     .banner{
         flex-direction: column;
+        height: 400px;
     }
 
     .banner .wrap{
@@ -120,6 +121,11 @@
 
     .banner p.title{
         text-align: center;
+    }
+
+        
+    .left-arrow, .right-arrow{
+        display: none;
     }
 
 }

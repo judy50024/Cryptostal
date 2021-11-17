@@ -25,7 +25,7 @@ p.paragraph{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .wrap{
@@ -90,8 +90,9 @@ p.paragraph{
     margin: 0;
 }
 
+
 .-info > *{
-    max-width: 900px;
+    max-width: 680px;
     width: 100%;
 }
     
@@ -116,6 +117,7 @@ p.paragraph{
     .-info{
         margin-bottom: 40px;
         padding: 20px;
+
     }
     
 }

@@ -152,6 +152,7 @@
 
     .banner{
         flex-direction: column;
+        height: 400px;
     }
 
     .banner > .wrap{
