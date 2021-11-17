@@ -123,6 +123,14 @@ body{
 
     z-index: -100;
 }
+@media (max-width: 768px) {
+    .banner{
+        background-image: url(../../img/banner-sm.png);
+        background-attachment: unset;
+    }
+    
+}
+
 
 
 /* product info section */
@@ -193,6 +201,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem;
 }
 
 .content{

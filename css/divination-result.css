@@ -100,14 +100,22 @@ p.paragraph{
     padding: 30px;
 }
 
+.-price p.subtitle{
+    margin: 0;
+}
 
 .-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: .5rem 0;
 }
 
 .accordion .title{
     padding: 0;
 }
+
 
 @media (max-width: 767px) {
     .container{
@@ -119,13 +127,22 @@ p.paragraph{
         padding: 20px;
 
     }
-    
+  
 }
 
 @media (max-width: 499px) {
     .-buy{
         flex-direction: column;
     }
+    .-price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+
 }
 
 
