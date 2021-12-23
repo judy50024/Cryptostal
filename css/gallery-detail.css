@@ -110,6 +110,12 @@
         margin-bottom: 20px;
     }
 
+    .-price > *{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
     .banner{
         flex-direction: column;
         height: 400px;
