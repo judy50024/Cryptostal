@@ -62,7 +62,7 @@ ul > li.divination > a{
 
 
 /* === flip animation === */
-.main-container{
+/* .main-container{
     width: 300px;
     height: 420px;
 }
@@ -91,7 +91,7 @@ ul > li.divination > a{
 
 .main-container:hover .the-card{
     transform: rotateY(180deg);
-}
+} */
 
 
 
