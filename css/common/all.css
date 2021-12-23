@@ -33,8 +33,6 @@ html{
 body{
     background-color: var(--pri-purple);
     color: var(--gold);
-
-
 }
 
 
@@ -120,8 +118,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    z-index: -100;
 }
 @media (max-width: 768px) {
     .banner{
